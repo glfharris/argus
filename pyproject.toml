@@ -1,0 +1,20 @@
+[project]
+name = "argus"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bleak>=0.22.3",
+    "exif>=1.6.0",
+    "numpy>=2.1.2",
+    "openai>=1.52.2",
+    "opencv-python>=4.10.0.84",
+    "pillow>=11.0.0",
+    "pyzbar>=0.1.9",
+    "requests>=2.32.3",
+    "rich-pixels>=3.0.1",
+    "rich>=13.9.3",
+    "simpleaudio>=1.0.4",
+    "packaging>=24.2",
+]

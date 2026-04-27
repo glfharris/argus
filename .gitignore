@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+
+# Media / binary data — test images, recordings, etc.
+img/
+vid/
+pres/*.jpg
+pres/*.png
+argus.jpg
