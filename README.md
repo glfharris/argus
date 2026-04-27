@@ -2,6 +2,8 @@
 
 Argus is a proof-of-concept wearable medication safety system designed to reduce drug administration errors in clinical settings. Instead of requiring staff to use handheld scanners, it surfaces verification information directly in the user's field of view.
 
+![View through the Argus eyepiece](argus-hud.jpg)
+
 ![Barcode recognition demo](vid/barcode-recording.gif)
 
 Medication errors occur in approximately 10% of ICU patient days, with around half happening at the point of administration — not in prescribing or dispensing, but in the final step when the drug reaches the patient. Traditional barcode medication administration (BCMA) systems suffer from poor compliance in high-pressure environments due to ergonomic friction. Argus attempts to address this by making verification hands-free and in-situ.
@@ -12,20 +14,25 @@ This was presented at the ICS State of the Art Conference in December 2025. Full
 
 ## Hardware
 
-![Argus hardware — Frame glasses with Raspberry Pi attached](argus.jpg)
+![Argus hardware — glasses, Pi boards, and camera modules](argus-hardware.jpg)
 
 - **Brilliant Labs Frame** — monocular head-mounted display
 - **Raspberry Pi Zero 2W** — edge compute
 - **Camera module** — barcode scanning
 - **3D-printed mounting brackets** — designed in FreeCAD
+
+![Iterations of the 3D-printed mounting brackets](argus-brackets.jpg)
+
 - **USB power bank** — portable power
+
+![Assembled unit](argus.jpg)
 
 ## Software & Technologies
 
 - **Python** with `asyncio` for concurrent image capture, processing, and display
 - **OpenCV** (`opencv-python`) — image capture and processing
 - **pyzbar** — barcode and QR code decoding
-- **Brilliant Labs Frame SDK** (`localframe`) — Bluetooth communication with the Frame glasses, display rendering, and tap gesture detection via the Frame's IMU
+- **Brilliant Labs Frame SDK** — Bluetooth communication with the Frame glasses, display rendering, and tap gesture detection via the Frame's IMU
 - **Rich** — terminal UI for monitoring administrations and logs
 - **Pillow** — image handling
 - **bleak** — Bluetooth Low Energy communication

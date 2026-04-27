@@ -13,9 +13,12 @@ wheels/
 
 # Media / binary data — test images, recordings, etc.
 img/
-vid/
+vid/*
 !vid/barcode-recording.gif
 pres/*.jpg
 pres/*.png
 argus.jpg
 !argus.jpg
+!argus-hardware.jpg
+!argus-brackets.jpg
+!argus-hud.jpg
