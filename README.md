@@ -2,9 +2,9 @@
 
 Argus is a proof-of-concept wearable medication safety system designed to reduce drug administration errors in clinical settings. Instead of requiring staff to use handheld scanners, it surfaces verification information directly in the user's field of view.
 
-<center>
+<p align="center">
 <img src="argus-hud.jpg" width="400" alt="View through the Argus eyepiece">
-</center>
+</p>
 
 ![Barcode recognition demo](vid/barcode-recording.gif)
 
